@@ -68,6 +68,7 @@ $RootFiles = @(
   ".prettierrc",
   "Backup-Cofound-BP-Desk.cmd",
   "CHANGELOG.md",
+  "CODE_OF_CONDUCT.md",
   "components.json",
   "CONTRIBUTING.md",
   "Disable-Cofound-Autostart.cmd",
