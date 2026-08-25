@@ -1,0 +1,199 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Cofound Investment Office: quiet institutional workspace */
+@theme inline {
+  --color-background: oklch(0.972 0.003 250);
+  --color-foreground: oklch(0.175 0.009 255);
+  --color-card: oklch(0.995 0.002 250);
+  --color-card-foreground: oklch(0.175 0.009 255);
+  --color-popover: oklch(0.995 0.002 250);
+  --color-popover-foreground: oklch(0.175 0.009 255);
+  --color-primary: oklch(0.195 0.01 255);
+  --color-primary-foreground: oklch(0.985 0.002 250);
+  --color-secondary: oklch(0.945 0.004 250);
+  --color-secondary-foreground: oklch(0.22 0.01 255);
+  --color-muted: oklch(0.952 0.004 250);
+  --color-muted-foreground: oklch(0.46 0.014 255);
+  --color-accent: oklch(0.925 0.008 250);
+  --color-accent-foreground: oklch(0.19 0.01 255);
+  --color-signal: oklch(0.5 0.175 260);
+  --color-signal-foreground: oklch(0.985 0.002 250);
+  --color-destructive: oklch(0.39 0.13 25);
+  --color-destructive-foreground: oklch(0.985 0.002 78);
+  --color-border: oklch(0.84 0.008 250);
+  --color-input: oklch(0.78 0.01 250);
+  --color-ring: oklch(0.5 0.175 260);
+  --color-chart-1: oklch(0.18 0.004 70);
+  --color-chart-2: oklch(0.38 0.008 70);
+  --color-chart-3: oklch(0.56 0.008 70);
+  --color-chart-4: oklch(0.39 0.13 25);
+  --color-chart-5: oklch(0.72 0.008 70);
+  --color-sidebar: oklch(0.16 0.004 70);
+  --color-sidebar-foreground: oklch(0.96 0.004 78);
+  --color-sidebar-primary: oklch(0.985 0.002 78);
+  --color-sidebar-primary-foreground: oklch(0.16 0.004 70);
+  --color-sidebar-accent: oklch(0.25 0.004 70);
+  --color-sidebar-accent-foreground: oklch(0.985 0.002 78);
+  --color-sidebar-border: oklch(0.31 0.004 70);
+  --color-sidebar-ring: oklch(0.985 0.002 78);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
+  --font-sans:
+    "Segoe UI Variable Text", "Segoe UI Variable", "Microsoft YaHei UI",
+    "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+  --font-mono: "Cascadia Code", "Bahnschrift", Consolas, monospace;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    background: var(--color-background);
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-width: 320px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-feature-settings:
+      "tnum" 1,
+      "ss01" 1;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-weight: 720;
+  }
+  input,
+  select,
+  textarea {
+    border-radius: var(--radius-md);
+  }
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .flex,
+  .grid {
+    min-width: 0;
+    min-height: 0;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: oklch(0.79 0.08 260 / 0.42);
+  }
+}
+
+@layer components {
+  .finance-kicker {
+    @apply text-[11px] font-bold tracking-[0.08em] text-muted-foreground;
+  }
+  .finance-rule {
+    @apply border-t border-foreground/80;
+  }
+  .finance-number {
+    @apply font-mono tabular-nums tracking-[-0.035em];
+  }
+  .paper-panel {
+    @apply rounded-lg border border-border bg-card;
+    box-shadow: 0 1px 2px rgb(21 30 45 / 0.025);
+  }
+  .field-label {
+    @apply text-[11px] font-bold tracking-[0.025em] text-muted-foreground;
+  }
+  .app-page {
+    @apply mx-auto w-full max-w-[1480px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8;
+  }
+  .page-heading {
+    @apply text-[2rem] font-bold leading-[1.06] tracking-[-0.045em] sm:text-[2.45rem];
+  }
+  .section-shell {
+    @apply overflow-hidden rounded-lg border border-border bg-card;
+    box-shadow: 0 1px 2px rgb(21 30 45 / 0.02);
+  }
+  .section-bar {
+    @apply flex min-h-12 items-center justify-between gap-4 border-b border-border px-4 py-3 sm:px-5;
+  }
+  .section-title {
+    @apply text-sm font-bold tracking-[-0.012em] text-foreground;
+  }
+  .selection-tile {
+    @apply rounded-md border border-border bg-card transition-[border-color,background-color,box-shadow] hover:border-foreground/35;
+  }
+  .selection-tile-active {
+    @apply border-signal bg-signal/5 shadow-[inset_3px_0_0_0_var(--color-signal)];
+  }
+  .mono-meta {
+    @apply font-mono text-[11px] font-medium tabular-nums text-muted-foreground;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.52 0.006 70);
+  border: 2px solid var(--color-muted);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-foreground);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    animation: fade-in 180ms var(--ease-out) both;
+  }
+  .slide-up {
+    animation: slide-up 220ms var(--ease-out) both;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+button:active,
+[role="button"]:active {
+  transform: translateY(1px);
+}

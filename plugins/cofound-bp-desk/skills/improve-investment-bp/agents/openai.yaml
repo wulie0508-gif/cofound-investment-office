@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound BP 优化"
+  short_description: "基于投资分析缺口优化 BP 叙事、证据层级与视觉表达"
+  brand_color: "#101214"
+  default_prompt: "使用 $improve-investment-bp 审查当前项目 BP，基于已核验事实生成一份不覆盖原件的改版方案。"

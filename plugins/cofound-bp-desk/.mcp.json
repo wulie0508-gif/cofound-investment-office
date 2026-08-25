@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cofoundBpDesk": {
+      "title": "Cofound BP Desk",
+      "description": "Local-first BP intake, evidence analysis, privacy-safe team feedback, selective Vercel Lite publication and internal collaboration sync.",
+      "cwd": ".",
+      "command": "node",
+      "args": ["./scripts/mcp-server.mjs"]
+    }
+  }
+}

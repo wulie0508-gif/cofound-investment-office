@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 市场优先七维"
+  short_description: "从赛道窗口、数据证据、模式韧性和退出假设审视项目"
+  brand_color: "#101214"
+  default_prompt: "使用 $assess-market-first 按市场优先七维分析当前 Cofound 项目。"

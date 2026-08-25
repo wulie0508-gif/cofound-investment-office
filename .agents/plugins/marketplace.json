@@ -1,0 +1,20 @@
+{
+  "name": "cofound-local",
+  "interface": {
+    "displayName": "Cofound Local"
+  },
+  "plugins": [
+    {
+      "name": "cofound-bp-desk",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cofound-bp-desk"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

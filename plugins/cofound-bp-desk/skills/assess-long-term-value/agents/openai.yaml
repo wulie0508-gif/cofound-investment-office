@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 产业与长期价值"
+  short_description: "评估产业位置、经营质量、长期壁垒、资本效率与下行情景"
+  brand_color: "#101214"
+  default_prompt: "使用 $assess-long-term-value 从产业和长期价值角度分析当前 Cofound 项目。"

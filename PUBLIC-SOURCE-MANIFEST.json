@@ -1,0 +1,24 @@
+{
+    "product":  "Cofound Investment Office",
+    "appVersion":  "1.3.0",
+    "pluginVersion":  "0.13.0+codex.20260825020518",
+    "generatedAt":  "2026-08-25T02:15:41.6178220Z",
+    "sourceMode":  "strict-allowlist-fresh-history",
+    "includes":  [
+                     "application-source",
+                     "codex-plugin",
+                     "public-contracts",
+                     "synthetic-samples",
+                     "public-docs"
+                 ],
+    "excludes":  [
+                     "git-history",
+                     "local-data",
+                     "real-bp",
+                     "credentials",
+                     "feishu-locators",
+                     "vercel-binding",
+                     "internal-reports",
+                     "artifacts"
+                 ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">Co-founder Investment Office</title>
+  <desc id="description">A monochrome CF investment office mark</desc>
+  <rect x="10" y="10" width="236" height="236" rx="46" fill="#101214"/>
+  <rect x="22" y="22" width="212" height="212" rx="36" fill="none" stroke="#F5F2EA" stroke-width="3"/>
+  <path d="M58 128c0-38 23-64 59-64 15 0 28 4 39 13l-12 19c-8-6-17-9-27-9-20 0-33 16-33 41 0 26 13 41 34 41 11 0 21-3 30-10l11 19c-12 10-26 15-43 15-35 0-58-26-58-65Z" fill="#F5F2EA"/>
+  <path d="M163 66h43v23h-19v22h17v22h-17v59h-24V66Z" fill="#F5F2EA"/>
+  <path d="M184 155h24v37h-24z" fill="#F5F2EA"/>
+</svg>

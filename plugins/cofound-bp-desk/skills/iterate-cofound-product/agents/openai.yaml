@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 产品迭代"
+  short_description: "领取网页改进任务，由本机 Codex 修改并回传审核"
+  brand_color: "#101214"
+  default_prompt: "使用 $iterate-cofound-product 领取我在本地网页提交的产品迭代任务，按任务深度完成检查并把结果回传网页等待审核。"

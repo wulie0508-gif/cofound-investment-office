@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 核心初筛"
+  short_description: "核验商业与融资事实，形成早期项目的核心初筛判断"
+  brand_color: "#101214"
+  default_prompt: "使用 $review-early-stage-investment 对当前 Cofound 项目做证据优先的核心初筛。"

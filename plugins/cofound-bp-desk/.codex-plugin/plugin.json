@@ -1,0 +1,45 @@
+{
+  "name": "cofound-bp-desk",
+  "version": "0.13.0+codex.20260825020518",
+  "description": "Independent local-first investment workspace for OpenAI Codex, with evidence-bound BP analysis, optional CleanTech enhancement and controlled connectors.",
+  "author": {
+    "name": "Cofound Investment Office contributors"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Cofound Investment Office",
+    "shortDescription": "Local-first BP analysis and investment workflows.",
+    "longDescription": "Codex-first local investment workspace: understand the user's current brief and investment view, retrieve evidence-backed facts, find BP problems, challenge and strengthen the user's reasoning, add traceable resource directions, and use four replaceable investment lenses only when useful. It keeps frozen-snapshot write-back, optional clean-energy financial, policy and opportunity capabilities, evidence-bound BP optimization, local pipeline management, selective Vercel Lite sharing, privacy-safe teammate feedback, and human-reviewed product iteration.",
+    "developerName": "Cofound Investment Office contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Analysis",
+      "Adaptive brief-first analysis",
+      "User thesis challenge and enhancement",
+      "Traceable resource recommendations",
+      "Open workspace capability protocol",
+      "Codex App Server analysis tasks",
+      "Preset analysis frameworks",
+      "Four replaceable investment skills",
+      "Optional project enhancement skills",
+      "CleanTech enhancement routing",
+      "Offline CleanTech financial evidence audit",
+      "Read-only Shanghai policy matching",
+      "Governed CleanTech opportunity matching",
+      "Evidence-bound BP optimization",
+      "Bounded batch analysis",
+      "Local tools",
+      "WeChat BP inbox",
+      "Feishu enterprise team inbox",
+      "Local project recycle bin",
+      "Configurable project fields",
+      "Selective sharing",
+      "Collaboration sync",
+      "Teammate Codex feedback diagnosis",
+      "Feishu maintenance inbox synchronization",
+      "Human-reviewed product iteration"
+    ],
+    "defaultPrompt": "Use $analyze-local-bp to answer my brief, strengthen my view, and preserve evidence; confirm before external writes."
+  }
+}

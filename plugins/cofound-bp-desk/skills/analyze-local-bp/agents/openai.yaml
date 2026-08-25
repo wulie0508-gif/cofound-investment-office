@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cofound 自适应投资工作台"
+  short_description: "开放式处理本地 BP、证据检索、问题反馈与思路增强"
+  icon_small: "./assets/cofound-mark.svg"
+  icon_large: "./assets/cofound-mark.svg"
+  brand_color: "#101214"
+  default_prompt: "使用 $analyze-local-bp 结合本地项目上下文自然地完成我的任务；专业 Skill 仅在确有帮助时调用。"

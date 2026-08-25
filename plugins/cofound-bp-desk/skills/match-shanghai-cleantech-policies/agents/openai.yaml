@@ -1,0 +1,8 @@
+interface:
+  display_name: "上海清洁能源政策匹配"
+  short_description: "查询飞书政策主库并解释可追溯候选"
+  brand_color: "#101214"
+  default_prompt: "Use $match-shanghai-cleantech-policies to match the current Cofound project against the live Shanghai clean-energy policy master and explain evidence-bound candidates."
+
+policy:
+  allow_implicit_invocation: false

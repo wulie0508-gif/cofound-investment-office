@@ -1,0 +1,17 @@
+Cofound Investment Office
+Copyright (c) 2026 Cofound Investment Office contributors
+
+Cofound Investment Office is an independent open-source project built for
+OpenAI Codex. It is not affiliated with or endorsed by OpenAI, DeepSeek, or
+Nous Research.
+
+Its Skill and MCP composition follows OpenAI's public plugin architecture. Its
+modular, replaceable-capability design is informed by DeepSeek Harness, and its
+extensible local-agent workflow is inspired by Hermes Agent by Nous Research.
+Neither project is included as a runtime dependency.
+
+OpenAI and Codex are trademarks of their respective owner. DeepSeek, Hermes,
+Feishu/Lark, Vercel and other product names are used only to identify optional
+integrations or architectural references.
+
+See THIRD_PARTY_NOTICES.md for links and additional attribution.

@@ -1,0 +1,13 @@
+.git
+.baseline
+artifacts
+backups
+data
+deliverables
+dist
+node_modules
+output
+releases
+.vercel
+.env*
+*.log

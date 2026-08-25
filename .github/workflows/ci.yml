@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    env:
+      CI: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install locked dependencies
+        run: corepack pnpm@10.34.5 install --frozen-lockfile
+      - name: Validate MCP syntax
+        run: node --check plugins/cofound-bp-desk/scripts/mcp-server.mjs
+      - name: Validate Skills
+        run: corepack pnpm@10.34.5 skills:verify
+      - name: Type check
+        run: corepack pnpm@10.34.5 check
+      - name: Test
+        run: corepack pnpm@10.34.5 test
+      - name: Build
+        run: corepack pnpm@10.34.5 build

@@ -1,0 +1,8 @@
+interface:
+  display_name: "清洁能源项目与招标机会"
+  short_description: "按需匹配欧洲与巴西项目机会候选"
+  brand_color: "#101214"
+  default_prompt: "Use $match-cleantech-project-opportunities to check the current clean-energy project against the governed opportunity catalog."
+
+policy:
+  allow_implicit_invocation: false

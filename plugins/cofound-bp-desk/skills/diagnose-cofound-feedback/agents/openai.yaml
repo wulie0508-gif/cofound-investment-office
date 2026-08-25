@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 问题诊断"
+  short_description: "在本机诊断产品问题并安全同步给内部维护者处理"
+  brand_color: "#101214"
+  default_prompt: "使用 $diagnose-cofound-feedback 诊断我遇到的 Cofound 产品问题，并把不含敏感信息的结论同步到内部维护台账。"

@@ -1,0 +1,17 @@
+services:
+  cofound-bp-desk:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      COF_BP_MODE: shared
+      COF_BP_HOST: 0.0.0.0
+      COF_BP_PORT: 4010
+      COF_BP_DATA_DIR: /app/data
+    ports:
+      - "4010:4010"
+    volumes:
+      - cofound_bp_data:/app/data
+
+volumes:
+  cofound_bp_data:

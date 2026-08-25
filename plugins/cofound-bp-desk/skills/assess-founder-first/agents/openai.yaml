@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cofound 创始人优先"
+  short_description: "基于可核验证据评估创始人的认知、执行、学习与团队适配"
+  brand_color: "#101214"
+  default_prompt: "使用 $assess-founder-first 评估当前 Cofound 项目的创始人与团队适配。"
